@@ -44,6 +44,10 @@ class App extends Component {
       .then(() => this.getTodos())
   }
 
+  // once our page loads, the database will be called and get our todos
+  componentDidMount() {
+    this.getTodos()
+  }
 
   render() {
     return (

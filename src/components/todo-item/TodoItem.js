@@ -6,7 +6,8 @@ export default class TodoItem extends Component {
       <li onClick={() => {
         console.log("click item")
         this.props.deleteTodo(this.props.thing.id)
-      }}>{this.props.thing.text}   </li>
+      }}>{this.props.thing.text}
+      </li>
     )
   }
 }

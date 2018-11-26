@@ -10,7 +10,7 @@ export default class TodoForm extends Component {
   render() {
     return (
       <div>
-        <input type="text" placeholder="new to do item" onChange={this.handleFieldChange}/>
+        <input type="text" placeholder="new to do item" onChange={this.handleFieldChange} />
         <button onClick={() => {
           console.log("button clicked")
           this.props.addTodo()
